@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Your CV – NTAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("photos/13cd4f43-ef42-406a-a7aa-189392f38141.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 380px;
+            padding: 35px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            text-align: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: linear-gradient(135deg, #2c7be5, #00c6ff);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .note {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="photos/1734801439337.jpg" alt="Company Logo" class="logo">
+        <h2>Upload Your CV</h2>
+
+        <form action="https://formsubmit.co/khazem253@gmail.com" method="POST" enctype="multipart/form-data">
+            <!-- Replace YOUR_GMAIL_HERE@gmail.com with a real Gmail you can access -->
+
+            <input type="hidden" name="_next" value="https://hazemkhaled10.github.io/CV-/thankyou.html">
+            <input type="hidden" name="_subject" value="New CV Submission">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="file" name="attachment" accept=".pdf,.doc,.docx,image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="note">
+            Accepted formats: PDF, DOC, DOCX, JPG, PNG
+        </div>
+
+    </div>
+
+</body>
+
+</html>
