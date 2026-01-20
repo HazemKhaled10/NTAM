@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You – NTAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("photos/13cd4f43-ef42-406a-a7aa-189392f38141.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 420px;
+            padding: 40px 30px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            color: #fff;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #f0f0f0;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .arabic {
+            direction: rtl;
+            font-size: 16px;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #2c7be5, #00c6ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #1a5bb8, #0099ff);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="photos/1734801439337.jpg" alt="Company Logo" class="logo">
+
+        <h1>Thank You</h1>
+        <p>Your CV has been successfully submitted.<br>We appreciate your interest in joining our organization.</p>
+        <p>Our HR team will review your application and contact you if your qualifications match our requirements.</p>
+
+        <div class="arabic">
+            <p>شكرًا لتقديم سيرتك الذاتية.<br>نُقدّر اهتمامك بالانضمام إلى فريقنا.</p>
+            <p>سيقوم فريق الموارد البشرية بمراجعة طلبك بعناية، وسيتم التواصل معك إذا توافق مؤهلاتك مع متطلباتنا.</p>
+        </div>
+
+        <a href="index.html" class="btn">Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
